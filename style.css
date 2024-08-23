@@ -406,6 +406,39 @@
     z-index: 1;
   }
   
+  .achievements {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+}
+
+.achievements-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.achievement {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.achievement h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.achievement p {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
   .contact h2 {
     font-size: 3rem;
     margin-bottom: 1.5rem;
