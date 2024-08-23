@@ -1,0 +1,13 @@
+title: "Nishchal Gante Ravish Portfolio"
+description: "Interactive portfolio showcasing projects, skills, and contact information."
+baseurl: ""
+url: "https://nishchalravish.github.io"
+theme: minima
+markdown: kramdown
+
+# Social Links
+linkedin_username: your-linkedin-username
+github_username: NishchalRavish
+
+# SEO
+permalink: pretty
