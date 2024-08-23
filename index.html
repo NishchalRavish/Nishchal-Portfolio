@@ -6,14 +6,16 @@
     <meta name="description" content="Interactive portfolio of Nishchal Gante Ravish, showcasing projects, skills, and more.">
     <title>Nishchal Gante Ravish | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <h1>Nishchal Gante Ravish</h1>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -24,60 +26,125 @@
 
     <section class="hero" id="home">
         <div class="hero-content">
-            <h2>Hello, I'm Nishchal</h2>
-            <p>A passionate Data Scientist and Developer who loves building innovative solutions.</p>
-            <a href="#projects" class="btn">Explore My Work</a>
+            <h2 data-aos="fade-up">Hello, I'm Nishchal</h2>
+            <p data-aos="fade-up" data-aos-delay="200">A passionate Data Scientist and Developer who loves building innovative solutions.</p>
+            <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="400">Explore My Work</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I'm a Data Scientist from Illinois Institute of Technology, specializing in Predictive Modeling, Generative AI, and MLOps. I enjoy creating intelligent solutions using state-of-the-art technologies.</p>
+        <h2 data-aos="fade-right">About Me</h2>
+        <p data-aos="fade-left">I'm a Data Scientist from Illinois Institute of Technology, specializing in Predictive Modeling, Generative AI, and MLOps. I enjoy creating intelligent solutions using state-of-the-art technologies.</p>
+        <div class="about-stats" data-aos="fade-up">
+            <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-text">Years Experience</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">20+</span>
+                <span class="stat-text">Projects Completed</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-text">Happy Clients</span>
+            </div>
+        </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h2 data-aos="fade-up">Projects</h2>
         <div class="project-cards">
-            <div class="card">
-                <h3>SummarAIze</h3>
-                <p>A multimodal news platform that generates real-time summaries using advanced AI models.</p>
-                <a href="https://github.com/NishchalRavish/SummarAIze" target="_blank" class="btn">View Project</a>
+            <div class="card" data-aos="fade-up">
+                <div class="card-content">
+                    <h3>SummarAIze</h3>
+                    <p>A multimodal news platform that generates real-time summaries using advanced AI models.</p>
+                    <a href="https://github.com/NishchalRavish/SummarAIze" target="_blank" class="btn">View Project</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>FoodEye</h3>
-                <p>An AI-powered tool for recognizing food items from images, available on Hugging Face and GitHub.</p>
-                <a href="https://github.com/NishchalRavish/FoodEye" target="_blank" class="btn">View Project</a>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-content">
+                    <h3>FoodEye</h3>
+                    <p>An AI-powered tool for recognizing food items from images, available on Hugging Face and GitHub.</p>
+                    <a href="https://github.com/NishchalRavish/FoodEye" target="_blank" class="btn">View Project</a>
+                </div>
             </div>
-            <!-- Add more project cards here -->
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-content">
+                    <h3>AI Chatbot</h3>
+                    <p>An intelligent chatbot powered by GPT-3, capable of natural language understanding and generation.</p>
+                    <a href="#" target="_blank" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <h2 data-aos="fade-up">Achievements</h2>
+        <div class="achievements-list">
+            <!-- Achievements will be dynamically inserted here -->
         </div>
     </section>
 
     <section id="skills" class="skills">
-        <h2>Skills</h2>
+        <h2 data-aos="fade-up">Skills</h2>
         <div class="skills-grid">
-            <div class="skill"><i class="fab fa-python"></i> Python</div>
-            <div class="skill"><i class="fas fa-database"></i> SQL</div>
-            <div class="skill"><i class="fab fa-aws"></i> AWS</div>
-            <div class="skill"><i class="fab fa-git-alt"></i> Git</div>
-            <div class="skill"><i class="fas fa-code"></i> JavaScript</div>
-            <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+            <div class="skill" data-aos="fade-up">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-database"></i>
+                <span>SQL</span>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="300">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-code"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill" data-aos="fade-up" data-aos-delay="500">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Let's connect! Feel free to reach out for collaborations or just a chat.</p>
+        <h2 data-aos="fade-up">Contact</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Let's connect! Feel free to reach out for collaborations or just a chat.</p>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/in/nishchalravish" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:nganteravish@hawk.iit.edu"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/NishchalRavish" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nishchalravish" target="_blank" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:nganteravish@hawk.iit.edu" data-aos="fade-up" data-aos-delay="400"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/NishchalRavish" target="_blank" data-aos="fade-up" data-aos-delay="500"><i class="fab fa-github"></i></a>
         </div>
+        <form class="contact-form" data-aos="fade-up" data-aos-delay="600">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 Nishchal Gante Ravish. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
