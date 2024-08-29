@@ -1,7 +1,5 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // ... (previous code remains the same)
-
     // Achievements section
     const achievements = [
         { title: "Data Science Hackathon Winner", year: 2023 },
@@ -45,9 +43,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     achievementsObserver.observe(achievementsSection);
 
-    // Skill progress animation
-    const skills = document.querySelectorAll('.skill');
-    const skillsSection = document.querySelector('#skills');
+    // Scroll Indicator
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    const heroSection = document.querySelector('.hero');
 
-    // ... (rest of the code remains the same)
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const heroHeight = heroSection.offsetHeight;
+
+        if (scrollPosition >= heroHeight / 2) {
+            scrollIndicator.style.opacity = '0';
+        } else {
+            scrollIndicator.style.opacity = '1';
+        }
+    });
+
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out',
+    });
 });
